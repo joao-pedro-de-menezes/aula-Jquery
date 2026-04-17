@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar-se</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <h2>Cadastro</h2>
+        
+        <div class="form-grid">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+            
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+            </div>
+            
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+            </div>
+            
+            <div class="campo">
+                <label for="confirmaSenha">Confirmar Senha</label>
+                <input type="password" id="confirmaSenha" placeholder="Confirme sua senha">
+            </div>
+            
+            <div class="campo">
+                <label for="area">Área de serviço</label>
+                <input type="text" id="area" placeholder="Área">
+            </div>
+            
+            <div class="campo">
+                <label for="setor">Setor</label>
+                <input type="text" id="setor" placeholder="Setor">
+            </div>
+
+            <div class="campo">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" placeholder="Usuário">
+            </div>
+
+            <div class="campo">
+                <label for="tipo">Tipo de usuário</label>
+                <select id="tipo" name="tipo" class="select-box">
+                    <option value=""></option>
+                    <option value="administrador">Administrador</option>
+                    <option value="ceo">CEO</option>
+                    <option value="presidente">Presidente</option>
+                    <option value="diretor">Diretor</option>
+                    <option value="supervisor">Supervisor</option>
+                    <option value="analista">Analista</option>
+                    <option value="assistente">Assistente</option>
+                    <option value="auxiliar">Auxiliar</option>
+                </select>
+            </div>
+
+            <div class="campo radio-group">
+                <label>Gênero</label>
+                <div class="opcoes-inline">
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino" class="label-inline">Masculino</label>
+                    
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino" class="label-inline">Feminino</label>
+                    
+                    <input type="radio" id="outros" name="genero" value="outros">
+                    <label for="outros" class="label-inline">Outros</label>
+                </div>
+            </div>
+
+            <div class="campo pcd">
+                <label>PCD</label>
+                <div class="opcoes-pcd">
+                    <input type="radio" id="opcao1" name="deficiente" value="sim">
+                    <label for="opcao1" class="label-inline">Sim</label>
+                    
+                    <input type="radio" id="opcao2" name="deficiente" value="nao">
+                    <label for="opcao2" class="label-inline">Não</label>
+                </div>
+            </div>
+        </div> <p class="mensagem" id="mensagem"></p>
+        <button id="btnRegistrar">Registrar</button>
+        <button id="btnLogin" onclick="navLogin()">Login</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
