@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding-top: 5px;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 20px;
+}
+.home {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 30vh;
+
+}
+
+main {
+    box-sizing: content-box;
+    background-color: rgb(0, 92, 38);
+    width: 100%;   
+}
+
+.tudo {
+    display: flex;
+}
+
+.card {
+    width: 350px;
+    background-color: darkgray;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 6);
+    display: inline-block;
+    
+
+}
+
+.usuario {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 6);
+    padding: 30px;
+    margin: 10px;
+    background-color: darkgray;
+    width: 400px;
+    height: 30vh;
+}
+
+
+
+.imagem {
+    margin-left: auto;          /* empurra tudo para a direita do header */
+    display: flex;              /* coloca imagem e nome lado a lado */
+    align-items: center;        /* alinha verticalmente */
+    gap: 10px;                  /* espaço entre foto e nome */
+}
+
+
+.imagem img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.nomeHome {
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.cabecalho {
+    display: flex;
+    align-items: flex-start;
+}
+
+.cards {
+    margin: 10px;
+    padding: 10px;
+}
+
+.log {
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 6);
+    padding: 30px;
+    margin: 10px;
+    background-color: darkgray;
+    width: 400px;
+    height: 30vh;
+}
+
+.sidebar {
+    padding: 30px;
+}
+
+.botao button {
+    padding: 10px;
+    margin: 10px;
+}

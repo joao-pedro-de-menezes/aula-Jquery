@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(50deg, red, orange);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    width: 800px; 
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Corrigido: rgba precisa de decimais no canal alpha */
+    display: none; 
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+/* NOVO: Grid para as colunas */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanhos iguais */
+    gap: 20px; /* Espaço entre os campos */
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="password"],
+.select-box { /* Adicionei a classe do select aqui para ficar igual aos inputs */
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.campo input:focus,
+.select-box:focus {
+    border-color: #1f6f8b;
+    box-shadow: 0 0 5px rgba(31, 111, 139, 0.4);
+}
+
+/* Ajustes para os botões de rádio e checkbox ficarem bonitos e alinhados */
+.opcoes-inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.opcoes-inline input {
+    width: auto; /* Evita que o radio/checkbox ocupe 100% da tela */
+}
+
+.label-inline {
+    display: inline !important;
+    font-weight: normal !important;
+    margin-bottom: 0 !important;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #13212d;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 25px; /* Dei um espacinho extra do formulário */
+}
+
+button:hover {
+    background-color: #1f6f8b;
+}
+
+.mensagem {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+.sucesso {
+    color: green;
+}
+
+.erro {
+    color: red;
+}
